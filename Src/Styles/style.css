@@ -1,0 +1,138 @@
+::-moz-selection {
+  color: white;
+  background: #01689c;
+}
+
+::selection {
+  color: white;
+  background: #01689c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fontlogo {
+  margin: 1.3vw 0 0 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #01689c;
+  list-style: none;
+}
+
+.fontlogo-title {
+  letter-spacing: 0.6ch;
+}
+
+.fontlogo-title:hover {
+  color: #009beb;
+}
+
+.fontlogo a {
+  text-decoration: none;
+  color: #01689c;
+}
+
+.fontlogo a:hover {
+  color: #009beb;
+}
+
+.fontlogo-sub {
+  font-weight: 700;
+}
+
+.Links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.Links-Despre {
+  margin-right: 5vw;
+}
+
+.Links li {
+  margin: 1.3vh 2vw 0 0;
+  padding: 0.5ch;
+  list-style: none;
+}
+
+.Links-Scrie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1em;
+  background: #01689c;
+}
+
+.Links-Scrie a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 2ch;
+}
+
+.Links-Scrie img {
+  width: 2ch;
+}
+
+.Links-Scrie:hover {
+  background: #009beb;
+}
+
+hr {
+  background: #d9d9d9;
+  border: none;
+  width: 95%;
+  margin: 1vh 0 1vh 0;
+  padding: 0.2vh 0 0.2vh 0;
+}
+
+div {
+  margin-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.5ch;
+}
+
+div .titlu {
+  color: #01689c;
+  border-bottom: 0.5vh dashed #01689c;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
