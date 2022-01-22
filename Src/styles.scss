@@ -17,12 +17,27 @@ body {
   background: #f4f4f4;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 0.9vw;
+}
+::-webkit-scrollbar-track {
+  background: $background;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient($red, $orange);
+  border-radius: 20px;
+}
+
 nav {
+  /*position: fixed;
+  width: 100%;*/
   padding: 1vh 2vw 1vh 2vw;
+  margin-bottom: 2.5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
+  z-index: 1;
 }
 @mixin link {
   list-style: none;
@@ -40,6 +55,9 @@ nav {
     color: $orange;
     text-shadow: 1px 1px 0px $yellow, 2px 2px 0px $green, 3px 3px 0px $blue,
       4px 4px 0px $purple;
+    &:hover {
+      color: #ec9d61;
+    }
   }
 }
 .right {
@@ -72,26 +90,59 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    height: auto;
-    border-radius: 20px;
+  width: 85%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  filter: blur(0.5px);
+}
+.title {
+  margin: 2.5vh 0 1vh 0;
+  text-align: center;
+  font-size: 2.7ch;
+  font-weight: 600;
+  background: linear-gradient(90.47deg, $red 0%, $orange 100%);
+  border-radius: 20px;
+}
+.content {
+  margin: 0 0 3vh 0;
+}
+@media screen and (min-width: 913px) {
+  nav {
+    margin-bottom: 4vh;
   }
-  .title {
-    font-size: 2.7ch;
-    font-weight: 600;
-    background: linear-gradient(90.47deg, $red 0%, $orange 100%);
-    border-radius: 20px;
+  .about {
+    display: flex;
+    width: 95%;
+  }
+  .geography {
+    display: flex;
+    width: 95%;
   }
   .content {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 0 0 1ch;
+    font-size: 2ch;
   }
+  .title {
+    margin: 0 0 1ch 0;
+    padding: 2.5vh 0 2.5vh 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 2.7ch;
+    font-weight: 600;
+    color: $background;
+  }
+  img {
+    height: 75vh;
+  }
+}
+.geography {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
 }
 
 /*@media screen and (min-width: 850px) {
