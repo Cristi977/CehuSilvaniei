@@ -9,26 +9,23 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="nav-top">
-            <ul class="left">
-                <a href="#about">
-                    <li class="big"><a>Cehu Silvaniei</a></li>
-                    <li class="small">cel mai frumos oras</li>
-                </a>
-            </ul>
-            <ul class="right">
-                <a href="#"><li>contact</li></a>
-            </ul>
-        </div>
-            <ul class="nav-bottom">
-                <li>Cehu Slivaniei</li>
-                <li>Geografie</li>
-                <li>Obiective Turistice</li>
-                <li>Subsol</li>
-            </ul>
+        <ul class="left">
+            <a href="#Cehu">
+                <li class="big">Cehu Silvaniei</li>
+                <li class="small">cel mai frumos oras</li>
+            </a>
+        </ul>
+        <ul class="right">
+            <a href="#"><li>contact</li></a>
+        </ul>
     </nav>
     <div class="cont">
-        <div class="about">
+        <ul class="nav-bottom">
+            <li><a href="#Cehu" class="Cehu">Cehu Slivaniei</a></li>
+            <li><a href="#geography" class="geo">Geografie</a></li>
+            <li><a href="#obiective" class="obj">Obiective Turistice</a></li>
+        </ul>
+        <div class="about" id="Cehu">
             <img src="./cehu-edited.png" alt="Cehu Silvaniei">
             <div class="section" id="about">
                 <p class="title">Cehu Silvaniei</p>
@@ -44,7 +41,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="geography">
+            <div class="geography" id="geography">
                 <img src="./harta-resized.png" alt="map">
                 <div class="section">
                     <p class="title">Geografie</p>
@@ -62,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="obiective">
+        <div class="obiective" id="obiective">
             <p class="title">Obiective turistice</p>
             <ul class="content">
                 <li>Parcul Central</li>
