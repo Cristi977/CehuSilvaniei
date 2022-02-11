@@ -222,3 +222,43 @@ body {
   padding: 0.01vh 0 0.01vh 30px;
   color: $background;
 }
+
+#subsol {
+  background: #d9d9d9;
+  padding: 3vh 0 1vh 3vw;
+  margin-top: 3vh;
+  ul {
+    position: relative;
+    margin-bottom: 2ch;
+    padding-left: 7px;
+    border-left: 1px solid #7b7b7b;
+    .titlu {
+      font-weight: 600;
+    }
+    .GitHub,
+    .Insta,
+    .titlu {
+      margin-bottom: 1vh;
+    }
+    li {
+      @include link();
+      a {
+        color: #7b7b7b;
+      }
+    }
+  }
+}
+@media screen and (min-width: 913px) {
+  #subsol {
+    display: flex;
+    justify-content: space-around;
+    ul {
+      border: 0;
+    }
+    .linie {
+      width: 2px;
+      height: 15vh;
+      background: #7b7b7b;
+    }
+  }
+}
