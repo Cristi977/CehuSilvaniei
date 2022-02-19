@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar {
+  width: 1.3vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fad232), to(#5eb95e));
+  background: linear-gradient(#fad232, #5eb95e);
+  border-radius: 20px;
+  border: 1px solid #f4f4f4;
+}
+
+.nav {
+  color: #f37b1d;
+  position: fixed;
+  width: 100%;
+  padding: 1vh 2vw 1vh 2vw;
+  margin-bottom: 2.5vh;
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  font-size: 2.7ch;
+  font-weight: 700;
+  list-style: none;
+  text-decoration: none;
+}
+
+.left .small {
+  font-size: 1.6ch;
+}
+
+.left a {
+  text-decoration: none;
+  color: #f37b1d;
+  text-shadow: 1px 1px 0px #fad232, 2px 2px 0px #5eb95e, 3px 3px 0px #1f8dd6, 4px 4px 0px #8058a5;
+}
+
+.left a:hover {
+  color: #ec9d61;
+}
+
+.right {
+  position: relative;
+  font-size: 2.3ch;
+  font-weight: 700;
+  list-style: none;
+  text-decoration: none;
+}
+
+.right a {
+  text-decoration: none;
+  color: #f37b1d;
+}
+
+.right a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.5px;
+  border-radius: 20px;
+  background: #f37b1d;
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0.1, 0.9, 1, 1);
+  transition: -webkit-transform 200ms cubic-bezier(0.1, 0.9, 1, 1);
+  transition: transform 200ms cubic-bezier(0.1, 0.9, 1, 1);
+  transition: transform 200ms cubic-bezier(0.1, 0.9, 1, 1), -webkit-transform 200ms cubic-bezier(0.1, 0.9, 1, 1);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.right a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.nav-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 2vh 0;
+  font-weight: 600;
+}
+
+.nav-bottom li {
+  position: relative;
+  margin: 0 1vw 0 1vw;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-bottom li a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-bottom li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.5px;
+  border-radius: 20px;
+  background: currentColor;
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0.1, 0.9, 1, 1);
+  transition: -webkit-transform 200ms cubic-bezier(0.1, 0.9, 1, 1);
+  transition: transform 200ms cubic-bezier(0.1, 0.9, 1, 1);
+  transition: transform 200ms cubic-bezier(0.1, 0.9, 1, 1), -webkit-transform 200ms cubic-bezier(0.1, 0.9, 1, 1);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.nav-bottom li a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.nav-bottom li .Cehu {
+  color: #dd514c;
+}
+
+.nav-bottom li .geo {
+  color: #5eb95e;
+}
+
+.nav-bottom li .obj {
+  color: #1f8dd6;
+}
+
+.cont {
+  position: relative;
+  top: 13vh;
+}
+
+/*.links {
+  margin
+  display: flex;
+  justify-content: space-around;
+}*/
+.container {
+  background: #ffffff;
+  margin: 3.5vh 0 3.5vh 0;
+  padding: 3.5vh 0 3.5vh 0;
+}
+
+.about,
+.geography,
+.obiective {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.about img,
+.geography img,
+.obiective img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
+}
+
+.about .title,
+.geography .title,
+.obiective .title {
+  color: #f4f4f4;
+  margin: 2.5vh 0 1vh 0;
+  text-align: center;
+  font-size: 2.7ch;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.about .content,
+.geography .content,
+.obiective .content {
+  margin: 0 0 3vh 0;
+}
+
+.about .title {
+  background: -webkit-gradient(linear, left top, right top, from(#dd514c), to(#f37b1d));
+  background: linear-gradient(90deg, #dd514c, #f37b1d);
+}
+
+.geography .title {
+  background: -webkit-gradient(linear, left top, right top, from(#5eb95e), to(#fad232));
+  background: linear-gradient(90deg, #5eb95e, #fad232);
+}
+
+.geography img {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+@media screen and (min-width: 913px) {
+  nav {
+    margin-bottom: 4vh;
+  }
+  .about,
+  .geography {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .content,
+  .geography .content {
+    margin: 0 0 0 1ch;
+    font-size: 2ch;
+  }
+  .about .title,
+  .geography .title {
+    margin: 0 0 1ch 1ch;
+    padding: 2.5vh 0 2.5vh 0;
+    font-size: 2.7ch;
+    font-weight: 600;
+    color: #f4f4f4;
+  }
+  .about img,
+  .geography img {
+    height: 75vh;
+  }
+}
+
+.obiective {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#8058a5), to(#1f8dd6));
+  background: linear-gradient(90deg, #8058a5, #1f8dd6);
+  padding: 0.01vh 0 0.01vh 30px;
+  color: #f4f4f4;
+}
+
+#subsol {
+  background: #d9d9d9;
+  padding: 3vh 0 1vh 3vw;
+  margin-top: 3vh;
+}
+
+#subsol ul {
+  position: relative;
+  margin-bottom: 2ch;
+  padding-left: 7px;
+  border-left: 1px solid #7b7b7b;
+}
+
+#subsol ul .titlu {
+  font-weight: 600;
+}
+
+#subsol ul .GitHub,
+#subsol ul .Insta,
+#subsol ul .titlu {
+  margin-bottom: 1vh;
+}
+
+#subsol ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+#subsol ul li a {
+  color: #7b7b7b;
+}
+
+@media screen and (min-width: 913px) {
+  #subsol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #subsol ul {
+    border: 0;
+  }
+  #subsol .linie {
+    width: 2px;
+    height: 15vh;
+    background: #7b7b7b;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
